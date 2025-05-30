@@ -1,0 +1,148 @@
+<!-- Replace <div class="section-5"> with this -->
+<div class="section-5">
+  <img class="highlight-line5" src="features.png" />
+
+  <div class="frame-763">
+    <div class="what-do-users-think-of-dolphinately">
+      What do users think of Dolphinately?
+    </div>
+  </div>
+
+  <!-- Swiper Carousel Start -->
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
+
+  <div class="testimonials-27-mobile-3 swiper testimonial-swiper">
+    <div class="swiper-wrapper">
+      <!-- Slide 1 -->
+      <div class="swiper-slide frame-832">
+        <div class="avatar">
+          <img class="ellipse-14" src="maksed girl 3.png" alt="Avatar" />
+        </div>
+        <blockquote>
+          It is a long established fact that a reader will be distracted by the readable content of a page when looking at its layout.
+        </blockquote>
+        <div class="lora-smith-creative-director-new-york">
+          <strong>Lora Smith, creative director,<br>New York</strong>
+        </div>
+      </div>
+
+      <!-- Slide 2 -->
+      <div class="swiper-slide frame-832">
+        <div class="avatar">
+          <img class="ellipse-14" src="maksed girl 3.png" alt="Avatar" />
+        </div>
+        <blockquote>
+          Amazing experience! Love how intuitive everything is.
+        </blockquote>
+        <div class="lora-smith-creative-director-new-york">
+          <strong>Emily Clark, UI designer,<br>London</strong>
+        </div>
+      </div>
+
+      <!-- Slide 3 -->
+      <div class="swiper-slide frame-832">
+        <div class="avatar">
+          <img class="ellipse-14" src="maksed girl 3.png" alt="Avatar" />
+        </div>
+        <blockquote>
+          Makes my workflow smoother. Definitely recommend.
+        </blockquote>
+        <div class="lora-smith-creative-director-new-york">
+          <strong>James Nguyen, developer,<br>Toronto</strong>
+        </div>
+      </div>
+    </div>
+
+    <!-- Navigation -->
+    <div class="swiper-button-prev"></div>
+    <div class="swiper-button-next"></div>
+  </div>
+
+  <style>
+    .frame-763 {
+      text-align: center;
+      margin: 2rem 0;
+    }
+
+    .testimonials-27-mobile-3 {
+      width: 100%;
+      max-width: 1000px;
+      margin: auto;
+      padding: 2rem 0;
+      overflow: hidden;
+    }
+
+    .swiper-wrapper {
+      display: flex;
+      align-items: center;
+    }
+
+    .frame-832 {
+      text-align: center;
+      transition: all 0.3s ease-in-out;
+      transform: scale(0.8);
+      opacity: 0.5;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      padding: 1rem;
+      box-sizing: border-box;
+    }
+
+    .swiper-slide-active {
+      transform: scale(1);
+      opacity: 1;
+    }
+
+    .ellipse-14 {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    blockquote {
+      background: #f4a940;
+      padding: 1rem;
+      border-radius: 8px;
+      max-width: 90%;
+      margin: 0 auto 1rem;
+      color: #222;
+    }
+
+    .lora-smith-creative-director-new-york {
+      font-size: 0.9rem;
+      color: #000;
+    }
+
+    .section-5 {
+      margin-bottom: 0;
+      padding-bottom: 0;
+    }
+  </style>
+
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+  <script>
+    const swiper = new Swiper('.testimonial-swiper', {
+      slidesPerView: 3,
+      centeredSlides: true,
+      loop: true,
+      spaceBetween: 30,
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      slideToClickedSlide: true,
+      breakpoints: {
+        0: {
+          slidesPerView: 1
+        },
+        768: {
+          slidesPerView: 3
+        }
+      }
+    });
+  </script>
+</div>
